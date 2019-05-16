@@ -3,4 +3,12 @@
     <string name="tl_work">工作</string>
     <string name="tl_CRM">CRM</string>
     <string name="tl_MY">我的</string>
+    <string name="string_empty">%1$s%2$s</string>
+
+    <!--crm_contacts_details_TabLayout_content-->
+    <string name="tl_crm_contacts_details_TabLayout_content_1">跟进记录</string>
+    <string name="tl_crm_contacts_details_TabLayout_content_2">详细信息</string>
+    <string name="tl_crm_contacts_details_TabLayout_content_3">商机</string>
+    <string name="tl_crm_contacts_details_TabLayout_content_4">甲方项目</string>
+    <string name="tl_crm_contacts_details_TabLayout_content_5">报价</string>
 </resources>

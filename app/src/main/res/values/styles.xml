@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppNoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Anim_Pop_Top_Botton">
+        <item name="android:windowEnterAnimation">@anim/pop_in_top_to_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_top_to_bottom</item>
+    </style>
+
+    <style name="Anim_Pop_Left_Right">
+        <item name="android:windowEnterAnimation">@anim/pop_in_left_to_right</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_left_to_right</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

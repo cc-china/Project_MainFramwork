@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorF0F0F0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginStart="@dimen/dp_15"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableStart="@mipmap/arrow_expandable"
+            android:gravity="center_vertical"
+            android:text="基本信息"
+            android:textColor="@color/color333333"
+            android:textSize="@dimen/sp_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_left_right_colorffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_contacts_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="客户名称"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/et_contacts_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_25"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_contacts_name"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="虎扑(上海公司)"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_contacts_birthday_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="生日"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_contacts_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_contacts_birthday_"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="1987-02-05"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_contacts_id_card_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="名片"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/tv_contacts_id_card"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/id_card" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_note_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="备注"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_note_"
+                    android:gravity="center"
+                    android:text="海鲜过敏"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_15"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableStart="@mipmap/arrow_expandable"
+                android:gravity="center_vertical"
+                android:text="联系信息"
+                android:textColor="@color/color333333"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_add_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableStart="@mipmap/add_contacts"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/dp_15"
+                android:text="添加联系人"
+                android:textColor="@color/color4E80F5"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_left_right_colorffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_contacts_emails_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="邮箱"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_contacts_emails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_contacts_emails_"
+                    android:gravity="center"
+                    android:text="112@163.com"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_person_phone_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="电话号码"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_person_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="021-2589545"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_customer_faxes_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="传真"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_customer_faxes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_customer_faxes_"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="210-25987855221"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_customer_weChat_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="微信号"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_customer_weChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_customer_weChat_"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="18756854582"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45">
+
+                <TextView
+                    android:id="@+id/tv_address_summary_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="省市区"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_address_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_toEndOf="@+id/tv_address_summary_"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="上海市虹口区"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/colorF0F0F0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_details_address_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="详细地址"
+                    android:textColor="@color/color999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_details_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:layout_marginEnd="@dimen/dp_25"
+                    android:layout_marginStart="@dimen/dp_45"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_toEndOf="@+id/tv_details_address_"
+                    android:gravity="center"
+                    android:minHeight="@dimen/dp_45"
+                    android:text="内廷以乾清宫、交泰殿、坤宁宫后三宫为中心，两翼为养心殿、东、西六宫、斋宫、毓庆宫，后有御花园。是封建帝王与后妃居住之所"
+                    android:textColor="@color/color333333"
+                    android:textSize="@dimen/sp_13" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

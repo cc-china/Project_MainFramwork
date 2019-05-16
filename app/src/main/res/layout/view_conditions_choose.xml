@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorFFFFFF"
+    android:orientation="horizontal">
+
+    <com.grirms.crm.view.MyRadioButton
+        android:id="@+id/mrb_filtrate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableStart="@drawable/selector_filtrate_customer_management"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="筛选"
+        android:textColor="@color/selector_text_color_condition_choose"
+        android:textSize="@dimen/sp_13" />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_15"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color666666" />
+
+    <com.grirms.crm.view.MyRadioButton
+        android:id="@+id/mrb_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableStart="@drawable/selector_sorting_customer_management"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="排序"
+        android:textColor="@color/selector_text_color_condition_choose"
+        android:textSize="@dimen/sp_13" />
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_15"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color666666" />
+
+    <com.grirms.crm.view.MyRadioButton
+        android:id="@+id/mrb_map"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="@dimen/dp_6"
+        android:drawableStart="@drawable/selector_map_customer_management"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="地图"
+        android:textColor="@color/selector_text_color_condition_choose"
+        android:textSize="@dimen/sp_13" />
+
+</RadioGroup>

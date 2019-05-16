@@ -54,6 +54,7 @@ public class RequestPermissionUtils {
                     ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
                             Manifest.permission.LOCATION_HARDWARE, Manifest.permission.READ_PHONE_STATE,
                             Manifest.permission.WRITE_SETTINGS, Manifest.permission.READ_EXTERNAL_STORAGE,
+                            Manifest.permission.CAMERA,
                             Manifest.permission.RECORD_AUDIO, Manifest.permission.READ_CONTACTS}, 0x0010);
                 }
             }

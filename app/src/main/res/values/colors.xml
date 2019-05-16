@@ -12,6 +12,18 @@
 
 
     <color name="color999999">#999999</color>
+    <color name="colorF0F0F0">#F0F0F0</color>
+    <color name="colorF6F6F6">#F6F6F6</color>
     <color name="color333333">#333333</color>
+    <color name="color666666">#666666</color>
     <color name="colorFFFFFF">#FFFFFF</color>
+    <color name="color5E8EF7">#5E8EF7</color>
+    <color name="color4E80F5">#4E80F5</color>
+    <color name="colorFF9B26">#FF9B26</color>
+    <color name="colorFA6470">#FA6470</color>
+    <color name="color00CA8D">#00CA8D</color>
+    <color name="colorF4F4F4">#F4F4F4</color>
+    <color name="colorBEBEBE">#BEBEBE</color>
+    <color name="color4D000000">#4D000000</color>
+
 </resources>

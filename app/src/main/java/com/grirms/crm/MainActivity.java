@@ -5,10 +5,14 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.grirms.crm.crm_module.fragment.CRMFragment;
 import com.grirms.crm.my_module.fragment.MyFragment;
@@ -26,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
     //fragment list
     private List<Fragment> mFragments = new ArrayList<>();
     //Tab_icon---Icon selector
-    private int[] mIconSelectorIds = {R.drawable.icon_work_selector
-            , R.drawable.icon_work_selector
-            , R.drawable.icon_work_selector};
+    private int[] mIconSelectorIds = {R.drawable.selector_icon_work
+            , R.drawable.selector_icon_work
+            , R.drawable.selector_icon_work};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,15 +68,17 @@ public class MainActivity extends AppCompatActivity {
         tl_tab.setupWithViewPager(vp_fragment);
         for (int i = 0; i < mTitles.length; i++) {
             TabLayout.Tab tab = tl_tab.getTabAt(i);
-            View view = LayoutInflater.from(this).inflate(R.layout.custom_tab, tl_tab,false);
+            View view = LayoutInflater.from(this).inflate(R.layout.custom_tab, tl_tab, false);
             TextView tvName = view.findViewById(R.id.tv_name);
             tvName.setText(mTitles[i]);
             ImageView ivIcon = view.findViewById(R.id.iv_icon);
             ivIcon.setImageResource(mIconSelectorIds[i]);
             //setting tab（customer tabItem）
-            assert tab !=null;
+            assert tab != null;
             tab.setCustomView(view);
         }
 
     }
+
+
 }
